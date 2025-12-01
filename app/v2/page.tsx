@@ -86,7 +86,7 @@ export default function HomeV2() {
       </nav>
 
       {/* Hero Section - DARK with V4 Style */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-primary-950 bg-noise">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-slate-950 via-slate-800 to-primary-700">
         {/* V4 Spotlight Orbs */}
         <div className="absolute top-20 right-10 w-64 h-64 bg-primary-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-96 h-96 bg-secondary-500/15 rounded-full blur-3xl"></div>
