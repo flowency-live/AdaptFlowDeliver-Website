@@ -92,7 +92,7 @@ export default function Home() {
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-slate-50 tracking-tight leading-none text-glow-primary">
               Adapt Flow Deliver
             </h1>
-            <p className="text-2xl md:text-3xl lg:text-4xl text-primary-300 font-medium max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl lg:text-3xl text-primary-300 font-medium max-w-4xl mx-auto">
               We strengthen what works, and streamline what slows you down.
             </p>
             <div className="space-y-4 pt-4">
