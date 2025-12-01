@@ -251,7 +251,7 @@ export default function Home() {
             ].map((service, idx) => (
               <div
                 key={idx}
-                className={`glass-strong p-8 rounded-xl border-2 hover:scale-105 transition-all duration-300 group cursor-pointer ${
+                className={`glass-strong p-8 rounded-xl border-4 hover:scale-105 transition-all duration-300 group cursor-pointer ${
                   service.color === 'primary'
                     ? 'border-primary-400 hover:border-primary-300 hover:shadow-glow-primary'
                     : 'border-primary-400 hover:border-primary-300 hover:shadow-glow-primary'
