@@ -149,7 +149,7 @@ export default function Home() {
             <p>Adapt Flow Deliver supports organisations as they move from complex, reactive ways of working to clear, predictable and value-focused operating models.</p>
 
             {/* Option 2: White with left accent bar */}
-            <div className="bg-white p-8 my-8 border-l-8 border-primary-500 border border-slate-200 shadow-xl rounded-lg">
+            <div className="bg-white p-8 my-8 border-l-8 border-l-primary-500 border-y border-r border-slate-200 shadow-xl rounded-lg">
               <p className="text-xl font-semibold text-slate-900 mb-6">Our belief is simple:</p>
               <ul className="space-y-4">
                 <li className="flex items-start group">
@@ -187,7 +187,7 @@ export default function Home() {
       </section>
 
       {/* Services Section - VERY DARK with Loveable Glass */}
-      <section id="services" className="relative py-32 bg-gradient-to-br from-[#020305] via-[#050810] to-[#020305] bg-noise overflow-hidden">
+      <section id="services" className="relative py-32 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 bg-noise overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-1/3 left-10 w-96 h-96 bg-secondary-500/20 rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-80 h-80 bg-primary-500/15 rounded-full blur-3xl" />
