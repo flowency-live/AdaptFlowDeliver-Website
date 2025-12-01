@@ -187,7 +187,7 @@ export default function Home() {
       </section>
 
       {/* Services Section - VERY DARK with Loveable Glass */}
-      <section id="services" className="relative py-32 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+      <section id="services" className="relative py-32 bg-gradient-to-br from-[#020305] via-[#050810] to-[#020305] overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-1/3 left-10 w-96 h-96 bg-secondary-500/20 rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-80 h-80 bg-primary-500/15 rounded-full blur-3xl" />
@@ -339,7 +339,7 @@ export default function Home() {
       </section>
 
       {/* Rebecca Section - DARK with Loveable Glass */}
-      <section id="rebecca" className="relative py-32 bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-slate-900 overflow-hidden">
+      <section id="rebecca" className="relative py-32 bg-gradient-to-br from-[#020305] via-[#0a0520] to-[#020305] overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-10 right-20 w-80 h-80 bg-primary-500/15 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-20 left-20 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
