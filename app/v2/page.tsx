@@ -7,7 +7,7 @@ export default function HomeV2() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       {/* AFD Header Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-slate-900/95 backdrop-blur-sm border-b border-slate-700/50 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -86,7 +86,7 @@ export default function HomeV2() {
       </nav>
 
       {/* Hero Section - DARK with V4 Style */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-slate-950 via-slate-800 to-slate-300">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-primary-950">
         {/* V4 Spotlight Orbs */}
         <div className="absolute top-20 right-10 w-64 h-64 bg-primary-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-96 h-96 bg-secondary-500/15 rounded-full blur-3xl"></div>
