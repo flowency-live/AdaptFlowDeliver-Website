@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 
-export default function HomeV2() {
+export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -149,7 +149,7 @@ export default function HomeV2() {
             <p>Adapt Flow Deliver supports organisations as they move from complex, reactive ways of working to clear, predictable and value-focused operating models.</p>
 
             {/* Option 2: White with left accent bar */}
-            <div className="bg-white p-8 my-8 border-l-6 border-primary-500 border border-slate-200 shadow-xl rounded-lg">
+            <div className="bg-white p-8 my-8 border-l-8 border-primary-500 border border-slate-200 shadow-xl rounded-lg">
               <p className="text-xl font-semibold text-slate-900 mb-6">Our belief is simple:</p>
               <ul className="space-y-4">
                 <li className="flex items-start group">
