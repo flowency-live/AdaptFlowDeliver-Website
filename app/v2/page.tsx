@@ -256,18 +256,18 @@ export default function HomeV2() {
             ].map((service, idx) => (
               <div
                 key={idx}
-                className={`glass p-8 rounded-xl border-2 hover:scale-105 transition-all duration-300 group cursor-pointer ${
+                className={`glass-strong p-8 rounded-xl border-2 hover:scale-105 transition-all duration-300 group cursor-pointer ${
                   service.color === 'primary'
-                    ? 'border-primary/40 hover:border-primary/70 hover:shadow-glow-primary'
-                    : 'border-secondary/40 hover:border-secondary/70 hover:shadow-glow-secondary'
+                    ? 'border-primary-400/60 hover:border-primary-300 hover:shadow-glow-primary'
+                    : 'border-secondary-400/60 hover:border-secondary-300 hover:shadow-glow-secondary'
                 }`}
               >
-                <div className={`text-3xl font-bold mb-4 ${
-                  service.color === 'primary' ? 'text-primary-400' : 'text-secondary-400'
+                <div className={`text-4xl font-bold mb-4 ${
+                  service.color === 'primary' ? 'text-primary-300' : 'text-secondary-300'
                 }`}>
                   {service.num}
                 </div>
-                <h3 className="text-2xl font-bold text-slate-100 mb-4 group-hover:text-glow-primary transition-all">
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary-300 transition-all">
                   {service.title}
                 </h3>
                 <p className="text-slate-300 leading-relaxed mb-2">
