@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { CalEmbed } from '@/components/CalEmbed'
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -249,17 +250,12 @@ export default function Home() {
             ].map((service, idx) => (
               <div
                 key={idx}
-                className={`glass-strong p-8 rounded-xl border-2 hover:scale-105 transition-all duration-300 group cursor-pointer ${
+                className={`glass-strong p-8 rounded-xl border hover:scale-105 transition-all duration-300 group cursor-pointer ${
                   service.color === 'primary'
-                    ? 'border-primary-400/60 hover:border-primary-300 hover:shadow-glow-primary'
-                    : 'border-secondary-400/60 hover:border-secondary-300 hover:shadow-glow-secondary'
+                    ? 'border-primary-400 hover:border-primary-300 hover:shadow-glow-primary'
+                    : 'border-primary-400 hover:border-primary-300 hover:shadow-glow-primary'
                 }`}
               >
-                <div className={`text-4xl font-bold mb-4 ${
-                  service.color === 'primary' ? 'text-primary-300' : 'text-secondary-300'
-                }`}>
-                  {service.num}
-                </div>
                 <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary-300 transition-all">
                   {service.title}
                 </h3>
@@ -302,7 +298,7 @@ export default function Home() {
               Our coaching and development work focuses on building confidence, clarity and skill at every level.
             </p>
 
-            <div className="bg-white/90 backdrop-blur-sm p-10 rounded-xl border-2 border-primary-200 shadow-lg">
+            <div className="bg-white p-8 my-8 border-l-8 border-l-primary-500 border-y border-r border-slate-200 shadow-xl rounded-lg">
               <div className="grid md:grid-cols-2 gap-6 pt-6">
                 <div className="space-y-3">
                   {[
@@ -331,7 +327,7 @@ export default function Home() {
               </div>
 
               <p className="text-lg text-slate-700 leading-relaxed italic pt-6 mt-6 border-t border-primary-200">
-                We strengthen what already works — and remove the barriers that prevent teams from growing.
+                We strengthen what already works - and remove the barriers that prevent teams from growing.
               </p>
             </div>
           </div>
@@ -376,8 +372,8 @@ export default function Home() {
                 on large-scale transformation, capability-building and flow-maturity programmes. She supports organisations that want clearer delivery, stronger alignment and more predictable value outcomes.
               </p>
 
-              <div className="glass p-6 rounded-xl mt-8 border border-primary/20">
-                <p className="font-semibold text-slate-100 mb-4">Her work spans:</p>
+              <div className="bg-gradient-to-r from-primary-500/20 to-secondary-500/20 p-6 rounded-lg mt-8 border-2 border-primary-500/40">
+                <p className="font-semibold text-slate-100 mb-3">Rebecca&apos;s experience spans:</p>
                 <div className="grid md:grid-cols-2 gap-3">
                   {[
                     "Aviation",
@@ -389,13 +385,13 @@ export default function Home() {
                     "Digital",
                     "Publishing"
                   ].map((industry, idx) => (
-                    <div key={idx} className="flex items-center group">
-                      <span className="text-primary-400 mr-2 group-hover:scale-110 transition-transform">•</span>
-                      <span className="text-slate-300">{industry}</span>
+                    <div key={idx} className="flex items-center">
+                      <span className="text-primary-400 mr-2 font-bold">•</span>
+                      <span className="text-slate-200">{industry}</span>
                     </div>
                   ))}
                 </div>
-                <p className="mt-6 text-slate-400">
+                <p className="mt-4 text-slate-300">
                   Across the UK, Europe, the Middle East and Asia Pacific.
                 </p>
               </div>
@@ -405,29 +401,105 @@ export default function Home() {
       </section>
 
       {/* Contact Section - LIGHT */}
-      <section id="contact" className="relative py-32 bg-gradient-to-br from-slate-50 to-primary-50 overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/3 right-10 w-96 h-96 bg-secondary-200/30 rounded-full blur-3xl" />
-        </div>
-
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <p className="text-sm md:text-base text-secondary-600 uppercase tracking-widest font-semibold mb-4">
+      <section id="contact" className="py-32 md:py-40 bg-gradient-to-br from-slate-100 via-secondary-50 to-slate-50 relative overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-20">
+            <p className="text-sm md:text-base text-secondary-600 uppercase tracking-wider font-semibold mb-4">
               Get in Touch
             </p>
-            <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
               Let&apos;s Talk
             </h2>
-            <div className="w-24 h-1.5 bg-gradient-to-r from-secondary-500 to-primary-500 mx-auto rounded-full" />
-            <p className="text-lg md:text-xl text-slate-700 max-w-3xl mx-auto mt-6">
+            <div className="w-24 h-1 bg-secondary-500 mx-auto mb-8"></div>
+            <p className="text-lg md:text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed">
               Ready to simplify delivery, build capability, and create lasting value? Get in touch to discuss how we can help.
             </p>
           </div>
 
-          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl border-2 border-primary-200 shadow-lg max-w-2xl mx-auto">
-            <p className="text-slate-700 text-center text-lg">
-              Contact form integration coming soon. In the meantime, reach out via email or LinkedIn.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Contact Form */}
+            <div className="bg-white p-8 rounded-lg border-2 border-secondary-300 shadow-xl">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Send a Message</h3>
+              <form className="space-y-4">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-semibold text-slate-700 mb-2">
+                    Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    className="w-full px-4 py-3 rounded-lg bg-slate-50 border-2 border-slate-300 text-slate-900 placeholder-slate-500 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-500/20 transition-all"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-semibold text-slate-700 mb-2">
+                    Email *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    className="w-full px-4 py-3 rounded-lg bg-slate-50 border-2 border-slate-300 text-slate-900 placeholder-slate-500 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-500/20 transition-all"
+                    placeholder="your.email@company.com"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="company" className="block text-sm font-semibold text-slate-700 mb-2">
+                    Organisation
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-50 border-2 border-slate-300 text-slate-900 placeholder-slate-500 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-500/20 transition-all"
+                    placeholder="Your organisation (optional)"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-semibold text-slate-700 mb-2">
+                    Message *
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows={5}
+                    className="w-full px-4 py-3 rounded-lg bg-slate-50 border-2 border-slate-300 text-slate-900 placeholder-slate-500 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-500/20 transition-all resize-none"
+                    placeholder="Tell us about your delivery challenges and what you're looking to achieve..."
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-secondary-500 hover:bg-secondary-600 text-white font-semibold px-6 py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg shadow-secondary-500/30 hover:shadow-xl hover:shadow-secondary-500/40"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            {/* Cal.com Embed */}
+            <div className="bg-white p-8 rounded-lg border-2 border-secondary-300 shadow-xl">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Book a Call</h3>
+              <div className="bg-slate-50 rounded-lg border-2 border-secondary-200" style={{ minHeight: '600px' }}>
+                <CalEmbed
+                  calLink="forrestrg"
+                  namespace="afd-booking"
+                  config={{
+                    theme: 'light',
+                    layout: 'month_view',
+                    hideEventTypeDetails: false
+                  }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
