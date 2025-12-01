@@ -87,6 +87,9 @@ export default function HomeV2() {
 
       {/* Hero Section - DARK with V4 Spotlights + Loveable Glass */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-primary-950 bg-noise">
+        {/* Diagonal Gradient Overlay - V4 Style */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/40 to-slate-600/20"></div>
+
         {/* V4 Spotlight Orbs */}
         <div className="absolute top-20 right-10 w-64 h-64 bg-primary-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-96 h-96 bg-secondary-500/15 rounded-full blur-3xl"></div>
