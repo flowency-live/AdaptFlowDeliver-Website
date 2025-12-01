@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { CalEmbed } from '@/components/CalEmbed'
+import { CookieBanner } from '@/components/CookieBanner'
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -250,7 +251,7 @@ export default function Home() {
             ].map((service, idx) => (
               <div
                 key={idx}
-                className={`glass-strong p-8 rounded-xl border hover:scale-105 transition-all duration-300 group cursor-pointer ${
+                className={`glass-strong p-8 rounded-xl border-2 hover:scale-105 transition-all duration-300 group cursor-pointer ${
                   service.color === 'primary'
                     ? 'border-primary-400 hover:border-primary-300 hover:shadow-glow-primary'
                     : 'border-primary-400 hover:border-primary-300 hover:shadow-glow-primary'
@@ -505,15 +506,59 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900/95 border-t border-slate-800 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="text-center">
-            <p className="text-sm text-slate-400">
-              © {new Date().getFullYear()} Adapt Flow Deliver Consultancy Ltd. All rights reserved.
-            </p>
+      <footer className="bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-slate-900 border-t-2 border-primary-500/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="grid md:grid-cols-3 gap-8 items-center">
+            {/* Logo Section */}
+            <div className="flex justify-center md:justify-start">
+              <Image
+                src="/afd-logo.png"
+                alt="Adapt Flow Deliver"
+                width={120}
+                height={120}
+                className="h-20 w-auto opacity-90"
+              />
+            </div>
+
+            {/* Copyright Section */}
+            <div className="text-center">
+              <p className="text-sm text-slate-400">
+                &copy; 2005-{new Date().getFullYear()} Adapt Flow Deliver Consultancy Ltd.
+              </p>
+              <p className="text-xs text-slate-500 mt-1">
+                All rights reserved.
+              </p>
+            </div>
+
+            {/* Policy Links Section */}
+            <div className="flex justify-center md:justify-end gap-4 text-sm">
+              <a
+                href="/privacy"
+                className="text-slate-400 hover:text-primary-400 transition-colors"
+              >
+                Privacy
+              </a>
+              <span className="text-slate-600">|</span>
+              <a
+                href="/terms"
+                className="text-slate-400 hover:text-primary-400 transition-colors"
+              >
+                Terms of Use
+              </a>
+              <span className="text-slate-600">|</span>
+              <a
+                href="/cookie-policy"
+                className="text-slate-400 hover:text-primary-400 transition-colors"
+              >
+                Cookie Policy
+              </a>
+            </div>
           </div>
         </div>
       </footer>
+
+      {/* Cookie Consent Banner */}
+      <CookieBanner />
     </div>
   );
 }
