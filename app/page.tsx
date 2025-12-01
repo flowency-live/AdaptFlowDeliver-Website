@@ -96,14 +96,17 @@ export default function Home() {
               Adapt Flow Deliver
             </h1>
             <p className="text-2xl md:text-3xl lg:text-4xl text-primary-glow font-medium max-w-4xl mx-auto">
-              We strengthen what works - and streamline what slows you down.
+              We strengthen what works, and streamline what slows you down.
             </p>
             <div className="space-y-4 pt-4">
               <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto">
-                End-to-end delivery. Capability uplift. Clear, scalable ways of working.
+                End-to-end delivery. Product capability uplift. Clear, scalable ways of working.
+              </p>
+              <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto">
+                Clear operating models. Confident teams. Predictable, customer-centred value delivery.
               </p>
               <p className="text-lg text-muted-foreground/80 max-w-2xl mx-auto">
-                We help organisations design and embed simple, scalable, customer-centric delivery systems.
+                We help organisations design and embed simple, scalable, customer-centric delivery and product systems.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
@@ -139,9 +142,6 @@ export default function Home() {
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in-up">
-            <p className="text-sm md:text-base text-primary uppercase tracking-widest font-semibold mb-4">
-              About Us
-            </p>
             <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
               Who We Are
             </h2>
@@ -149,11 +149,10 @@ export default function Home() {
           </div>
 
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-            <p>Adapt Flow Deliver helps organisations design and embed simple, scalable and customer-centric delivery systems.</p>
-            <p>We support leaders and teams as they shift from complex, reactive ways of working to clear, predictable and value-focused operating models.</p>
+            <p>Adapt Flow Deliver supports organisations as they move from complex, reactive ways of working to clear, predictable and value-focused operating models.</p>
 
             <div className="glass-strong p-8 my-8 border border-primary/20 shadow-elevated rounded-xl">
-              <p className="text-xl font-semibold text-foreground mb-6">Our belief is straightforward:</p>
+              <p className="text-xl font-semibold text-foreground mb-6">Our belief is simple:</p>
               <ul className="space-y-4">
                 <li className="flex items-start group">
                   <span className="text-primary mr-3 text-2xl group-hover:scale-110 transition-transform">→</span>
@@ -170,13 +169,20 @@ export default function Home() {
               </ul>
             </div>
 
-            <p>We blend strategy, operating model design and modern delivery practices to uplift capability across the entire organisation - from leadership through to teams on the ground.</p>
+            <p>We blend strategy, operating model design, product management capability, and modern delivery practices to uplift performance across the entire organisation from leadership to teams on the ground.</p>
             <p className="text-center text-muted-foreground/70 italic pt-4">
-              Founded by Rebecca Forrest, we work globally across aviation, financial services, global energy, engineering, data, product, digital and publishing organisations.
+              Founded by Rebecca Forrest, we work across aviation, financial services, global energy, engineering, data, product, digital and publishing organisations, across the UK, Europe, the Middle East and Asia Pacific.
             </p>
-            <p className="text-center text-muted-foreground/70 italic">
-              Across the UK, Europe, the Middle East and Asia Pacific.
-            </p>
+
+            <div className="glass-strong p-8 mt-12 border border-primary/20 shadow-elevated rounded-xl">
+              <p className="text-sm text-primary uppercase tracking-widest font-semibold mb-4">Testimonial from Richard Patterson - Interim Director of Product - Ops and Engineering</p>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Rebecca worked with me at British Airways as a Interim Head of Ops and Engineering Data and Integrations and was pivotal in driving forward our Product ways of working. She quickly became a trusted partner to the team, combining a deep breadth of knowledge and experience with a genuinely approachable style.
+              </p>
+              <p className="text-base text-muted-foreground leading-relaxed mt-4">
+                Rebecca helped us shape and embed new ways of working that have had a lasting positive impact. She was always willing to listen, challenge constructively and supporting people at all levels through the change. I wouldn&apos;t hesitate to work with her again or to recommend her for any role that requires strong leadership, collaboration and transformation skills.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -198,7 +204,7 @@ export default function Home() {
             </h2>
             <div className="w-24 h-1.5 bg-gradient-to-r from-secondary to-primary mx-auto rounded-full" />
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mt-6">
-              Supporting organisations through transformation, capability building and value delivery
+              Supporting organisations through transformation, capability building and value delivery.
             </p>
           </div>
 
@@ -207,38 +213,38 @@ export default function Home() {
               {
                 num: "01",
                 title: "Strategy → Operating Model Alignment",
-                desc: "Supporting organisations to translate strategic goals into practical, scalable ways of working that teams can confidently deliver against.",
+                desc: "Translating strategic and product goals into practical, scalable ways of working that teams can confidently deliver against.",
                 color: "primary"
               },
               {
                 num: "02",
-                title: "End-to-End Delivery Transformation",
-                desc: "From idea to delivery, we simplify systems, improve flow, and remove the friction that prevents teams from delivering real customer value.",
+                title: "End-to-End Delivery & Product Transformation",
+                desc: "From idea to customer value, we simplify systems, improve flow and remove friction. We help product and delivery teams work with clarity, alignment and predictable outcomes.",
                 color: "secondary"
               },
               {
                 num: "03",
                 title: "Capability Uplift Across Teams & Leadership",
-                desc: "Building capability is at the heart of everything we do - skills, mindset, clarity, confidence and alignment.",
-                note: "(Kanban and flow-based delivery are areas of specialist expertise.)",
+                desc: "Building capability is at the centre of everything we do, skills, mindset, alignment and confidence.",
+                note: "(Flow-based delivery and Kanban are areas of deep specialist expertise.)",
                 color: "primary"
               },
               {
                 num: "04",
-                title: "Customer-Centric Ways of Working",
-                desc: "Helping teams prioritise work that genuinely delivers customer value, with clear demand shaping, simple prioritisation, and improved decision-making.",
+                title: "Customer- & Product-Centric Ways of Working",
+                desc: "Helping teams prioritise what truly delivers customer and commercial value through clear demand shaping, simple prioritisation and better decision-making.",
                 color: "secondary"
               },
               {
                 num: "05",
                 title: "Flow, Data & Insight-Driven Delivery",
-                desc: "Translating data into visibility: cycle time, throughput, blockers, risks, forecasting - explained in plain English so leaders can make better decisions.",
+                desc: "Turning data into visibility: cycle time, throughput, blockers, forecast accuracy, risk signals. We explain insights in plain English so leaders and product teams can make better decisions.",
                 color: "primary"
               },
               {
                 num: "06",
                 title: "Collaboration & Cross-Team Alignment",
-                desc: "Creating smoother coordination across departments, reducing noise, clarifying ownership, and giving everyone visibility of how value moves through the system.",
+                desc: "Creating smooth coordination across departments, reducing noise, clarifying ownership and giving everyone visibility of how value moves through the organisation.",
                 color: "secondary"
               }
             ].map((service, idx) => (
@@ -291,19 +297,18 @@ export default function Home() {
 
           <div className="max-w-4xl mx-auto space-y-8">
             <p className="text-2xl text-foreground/90 leading-relaxed text-center font-light">
-              Empowering individuals and teams through continuous learning, skill growth, and leadership development to drive lasting organisational capability.
+              Capability is built through people, not processes.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed text-center">
+              Our coaching and development work focuses on building confidence, clarity and skill at every level.
             </p>
 
             <div className="glass-strong p-10 rounded-xl border-2 border-primary/20 shadow-elevated">
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                We believe capability is built through people, not processes. Our coaching and development approach focuses on progressive skill growth, building confidence, and creating environments where teams can continuously learn and adapt.
-              </p>
-
               <div className="grid md:grid-cols-2 gap-6 pt-6">
                 <div className="space-y-3">
                   {[
-                    "Leadership coaching and capability building",
-                    "Team development and continuous learning",
+                    "Leadership coaching and capability uplift",
+                    "Product and delivery team development",
                     "Kanban and flow-based delivery training"
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-start group">
@@ -327,7 +332,7 @@ export default function Home() {
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed italic pt-6 mt-6 border-t border-primary/20">
-                We amplify what already works in your teams and remove the barriers that prevent them from growing.
+                We strengthen what already works — and remove the barriers that prevent teams from growing.
               </p>
             </div>
           </div>
@@ -355,10 +360,10 @@ export default function Home() {
           <div className="glass-strong p-10 md:p-12 rounded-xl border-2 border-primary/20 shadow-elevated">
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Rebecca is a delivery transformation lead who specialises in simplifying complex delivery environments, uplifting capability, and helping organisations become more customer-centric and value-focused.
+                Rebecca is a delivery and product transformation lead who specialises in simplifying complex environments, uplifting capability and helping organisations become more customer-centric and value-focused.
               </p>
               <p>
-                She blends strategy, operating model design and practical delivery experience to help teams understand their system, improve flow, and build confidence in how work moves from idea to customer.
+                She blends strategy, product thinking, operating model design and practical delivery experience to help teams understand their system, improve flow and build confidence in how work moves from idea to customer.
               </p>
               <p>
                 Rebecca partners with{" "}
@@ -369,12 +374,7 @@ export default function Home() {
                 <a href="https://www.flowency.co.uk" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:text-primary-glow transition-colors underline decoration-primary/30 hover:decoration-primary">
                   Flowency
                 </a>{" "}
-                on large-scale transformation, capability-building and flow-maturity programmes, working with organisations who want clearer delivery, stronger alignment and more predictable value outcomes.
-              </p>
-              <p>
-                She has deep expertise in flow-based delivery and Kanban, but her real strength is bringing{" "}
-                <span className="font-semibold text-foreground">clarity, calm and capability uplift</span>{" "}
-                to organisations navigating complexity.
+                on large-scale transformation, capability-building and flow-maturity programmes. She supports organisations that want clearer delivery, stronger alignment and more predictable value outcomes.
               </p>
 
               <div className="glass p-6 rounded-xl mt-8 border border-primary/20">
