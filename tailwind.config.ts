@@ -26,7 +26,6 @@ export default {
           700: '#155e75',
           800: '#164e63',
           900: '#083344',
-          950: '#042f2e',
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
           glow: "hsl(var(--primary-glow))",
