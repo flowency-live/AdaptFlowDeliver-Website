@@ -155,7 +155,8 @@ export default function HomeV2() {
           <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
             <p>Adapt Flow Deliver supports organisations as they move from complex, reactive ways of working to clear, predictable and value-focused operating models.</p>
 
-            <div className="bg-gradient-to-br from-primary-50 to-secondary-50 p-8 my-8 border-2 border-primary-200 shadow-lg rounded-xl">
+            {/* Option 2: White with left accent bar */}
+            <div className="bg-white p-8 my-8 border-l-4 border-primary-500 shadow-xl rounded-lg">
               <p className="text-xl font-semibold text-slate-900 mb-6">Our belief is simple:</p>
               <ul className="space-y-4">
                 <li className="flex items-start group">
@@ -178,7 +179,8 @@ export default function HomeV2() {
               Founded by Rebecca Forrest, we work across aviation, financial services, global energy, engineering, data, product, digital and publishing organisations, across the UK, Europe, the Middle East and Asia Pacific.
             </p>
 
-            <div className="bg-gradient-to-br from-primary-50 to-secondary-50 p-8 mt-12 border-2 border-primary-200 shadow-lg rounded-xl">
+            {/* Option 3: Glassmorphism with subtle border */}
+            <div className="bg-slate-50/80 backdrop-blur-sm p-8 mt-12 border border-primary-300/60 shadow-lg rounded-xl">
               <p className="text-sm text-primary-600 uppercase tracking-widest font-semibold mb-4">Testimonial from Richard Patterson - Interim Director of Product - Ops and Engineering</p>
               <p className="text-base text-slate-700 leading-relaxed">
                 Rebecca worked with me at British Airways as a Interim Head of Ops and Engineering Data and Integrations and was pivotal in driving forward our Product ways of working. She quickly became a trusted partner to the team, combining a deep breadth of knowledge and experience with a genuinely approachable style.
