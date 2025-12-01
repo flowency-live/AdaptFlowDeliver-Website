@@ -103,13 +103,13 @@ export default function HomeV2() {
               We strengthen what works, and streamline what slows you down.
             </p>
             <div className="space-y-4 pt-4">
-              <p className="text-xl md:text-2xl text-slate-300 font-light max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl text-slate-300 font-light max-w-6xl mx-auto">
                 End-to-end delivery. Product capability uplift. Clear, scalable ways of working.
               </p>
-              <p className="text-xl md:text-2xl text-slate-300 font-light max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl text-slate-300 font-light max-w-6xl mx-auto">
                 Clear operating models. Confident teams. Predictable, customer-centred value delivery.
               </p>
-              <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              <p className="text-lg text-slate-400 max-w-5xl mx-auto">
                 We help organisations design and embed simple, scalable, customer-centric delivery and product systems.
               </p>
             </div>
