@@ -21,7 +21,7 @@ export default function Home() {
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-slate-300 hover:text-primary-400 transition-colors font-medium">About</a>
-              <a href="#services" className="text-slate-300 hover:text-primary-400 transition-colors font-medium">Services</a>
+              <a href="/services" className="text-slate-300 hover:text-primary-400 transition-colors font-medium">Services</a>
               <a href="#rebecca" className="text-slate-300 hover:text-primary-400 transition-colors font-medium">Rebecca</a>
               <a href="#contact" className="text-slate-300 hover:text-primary-400 transition-colors font-medium">Contact</a>
             </div>
@@ -68,7 +68,7 @@ export default function Home() {
                   About
                 </a>
                 <a
-                  href="#services"
+                  href="/services"
                   className="text-slate-300 hover:text-primary-400 transition-colors font-medium px-4 py-2 rounded-lg hover:bg-slate-800"
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -134,7 +134,7 @@ export default function Home() {
                 Get in Touch
               </a>
               <a
-                href="#services"
+                href="/services"
                 className="inline-flex items-center justify-center text-lg px-8 py-4 border-2 border-primary-400 text-primary-400 hover:bg-primary-400/10 rounded-lg transition-all font-semibold"
               >
                 Our Services
@@ -223,67 +223,68 @@ export default function Home() {
             </h2>
             <div className="w-24 h-1.5 bg-gradient-to-r from-secondary-400 to-primary-400 mx-auto rounded-full" />
             <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mt-6">
-              Supporting organisations through transformation, capability building and value delivery.
+              We help organisations improve delivery, strengthen capability and build customer-centric ways of working.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {[
               {
-                num: "01",
                 title: "Strategy → Operating Model Alignment",
-                desc: "Translating strategic and product goals into practical, scalable ways of working that teams can confidently deliver against.",
-                color: "primary"
+                desc: "Clarity on how strategy translates into day-to-day execution.",
+                id: "service-1"
               },
               {
-                num: "02",
                 title: "End-to-End Delivery & Product Transformation",
-                desc: "From idea to customer value, we simplify systems, improve flow and remove friction. We help product and delivery teams work with clarity, alignment and predictable outcomes.",
-                color: "secondary"
+                desc: "Cleaner systems, smoother flow, and more predictable outcomes.",
+                id: "service-2"
               },
               {
-                num: "03",
                 title: "Capability Uplift Across Teams & Leadership",
-                desc: "Building capability is at the centre of everything we do, skills, mindset, alignment and confidence.",
-                note: "(Flow-based delivery and Kanban are areas of deep specialist expertise.)",
-                color: "primary"
+                desc: "Confident, capable teams who can deliver without chaos.",
+                id: "service-3"
               },
               {
-                num: "04",
                 title: "Customer- & Product-Centric Ways of Working",
-                desc: "Helping teams prioritise what truly delivers customer and commercial value through clear demand shaping, simple prioritisation and better decision-making.",
-                color: "secondary"
+                desc: "Focus on the work that truly drives customer and commercial value.",
+                id: "service-4"
               },
               {
-                num: "05",
                 title: "Flow, Data & Insight-Driven Delivery",
-                desc: "Turning data into visibility: cycle time, throughput, blockers, forecast accuracy, risk signals. We explain insights in plain English so leaders and product teams can make better decisions.",
-                color: "primary"
+                desc: "Decisions grounded in real delivery data, not guesswork.",
+                id: "service-5"
               },
               {
-                num: "06",
                 title: "Collaboration & Cross-Team Alignment",
-                desc: "Creating smooth coordination across departments, reducing noise, clarifying ownership and giving everyone visibility of how value moves through the organisation.",
-                color: "secondary"
+                desc: "Smoother coordination across teams, functions and departments.",
+                id: "service-6"
               }
             ].map((service, idx) => (
-              <div
+              <a
                 key={idx}
-                className={`bg-slate-800/80 backdrop-blur-[20px] p-8 rounded-xl border-2 border-primary-400 hover:border-primary-300 hover:scale-105 hover:shadow-glow-primary transition-all duration-300 group cursor-pointer`}
+                href={`/services#${service.id}`}
+                className="bg-slate-800/80 backdrop-blur-[20px] p-8 rounded-xl border-2 border-primary-400 hover:border-primary-300 hover:scale-105 hover:shadow-glow-primary transition-all duration-300 group cursor-pointer block"
               >
                 <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary-300 transition-all">
                   {service.title}
                 </h3>
-                <p className="text-slate-300 leading-relaxed mb-2">
+                <p className="text-slate-300 leading-relaxed">
                   {service.desc}
                 </p>
-                {service.note && (
-                  <p className="text-sm text-slate-400 italic mt-4">
-                    {service.note}
-                  </p>
-                )}
-              </div>
+              </a>
             ))}
+          </div>
+
+          <div className="text-center">
+            <a
+              href="/services"
+              className="inline-flex items-center justify-center text-lg px-10 py-5 bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white rounded-lg shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-primary-500/50 hover:scale-105 transition-all font-bold"
+            >
+              View All Services & Detailed Information
+              <svg className="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
