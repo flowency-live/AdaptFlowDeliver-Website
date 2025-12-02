@@ -251,7 +251,7 @@ export default function Home() {
             ].map((service, idx) => (
               <div
                 key={idx}
-                className={`bg-slate-800/80 backdrop-blur-[20px] p-8 rounded-xl border-4 border-primary-400 hover:border-primary-300 hover:scale-105 hover:shadow-glow-primary transition-all duration-300 group cursor-pointer`}
+                className={`bg-slate-800/80 backdrop-blur-[20px] p-8 rounded-xl border-2 border-primary-400 hover:border-primary-300 hover:scale-105 hover:shadow-glow-primary transition-all duration-300 group cursor-pointer`}
               >
                 <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary-300 transition-all">
                   {service.title}
