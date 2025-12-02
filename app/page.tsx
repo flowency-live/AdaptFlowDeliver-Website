@@ -86,28 +86,29 @@ export default function Home() {
         <div className="absolute top-20 right-10 w-64 h-64 bg-primary-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-96 h-96 bg-secondary-500/15 rounded-full blur-3xl"></div>
 
-        {/* Subtle radial overlay for text contrast */}
-        <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-slate-900/30"></div>
+        {/* Strong contrast overlays */}
+        <div className="absolute inset-0 bg-gradient-radial from-transparent via-slate-900/20 to-slate-900/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-slate-900/50"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <div className="space-y-8 animate-fade-in-up">
-            <p className="text-sm md:text-base text-primary-300 uppercase tracking-widest font-semibold drop-shadow-lg">
+            <p className="text-sm md:text-base text-primary-300 uppercase tracking-widest font-semibold" style={{textShadow: '0 2px 10px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)'}}>
               Delivery Optimisation Experts
             </p>
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-slate-50 tracking-tight leading-none text-glow-primary drop-shadow-lg">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-slate-50 tracking-tight leading-none text-glow-primary" style={{textShadow: '0 4px 20px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.6)'}}>
               Adapt Flow Deliver
             </h1>
-            <p className="text-xl md:text-2xl lg:text-3xl text-primary-300 font-medium max-w-4xl mx-auto drop-shadow-lg">
+            <p className="text-xl md:text-2xl lg:text-3xl text-primary-300 font-medium max-w-4xl mx-auto" style={{textShadow: '0 2px 15px rgba(0,0,0,0.8), 0 0 25px rgba(0,0,0,0.5)'}}>
               We strengthen what works, and streamline what slows you down.
             </p>
             <div className="space-y-4 pt-4">
-              <p className="text-xl md:text-2xl text-slate-300 font-light max-w-6xl mx-auto drop-shadow-lg">
+              <p className="text-xl md:text-2xl text-slate-300 font-light max-w-6xl mx-auto" style={{textShadow: '0 2px 15px rgba(0,0,0,0.8), 0 0 25px rgba(0,0,0,0.5)'}}>
                 End-to-end delivery. Product capability uplift. Clear, scalable ways of working.
               </p>
-              <p className="text-xl md:text-2xl text-slate-300 font-light max-w-6xl mx-auto drop-shadow-lg">
+              <p className="text-xl md:text-2xl text-slate-300 font-light max-w-6xl mx-auto" style={{textShadow: '0 2px 15px rgba(0,0,0,0.8), 0 0 25px rgba(0,0,0,0.5)'}}>
                 Clear operating models. Confident teams. Predictable, customer-centred value delivery.
               </p>
-              <p className="text-lg text-slate-400 max-w-5xl mx-auto drop-shadow-lg">
+              <p className="text-lg text-slate-400 max-w-5xl mx-auto" style={{textShadow: '0 2px 15px rgba(0,0,0,0.8), 0 0 25px rgba(0,0,0,0.5)'}}>
                 We help organisations design and embed simple, scalable, customer-centric delivery and product systems.
               </p>
             </div>
